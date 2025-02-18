@@ -1,0 +1,13 @@
+<header class="header">
+  <h3>
+    {{ headerTitle }}
+  </h3>
+  <div class="buttons">
+    <button routerLink="/home">Home</button>
+    <button routerLink="/about">About</button>
+    <button [routerLink]="['/', 'about', ValueForParam]">
+      With Param Id : About
+    </button>
+    <button (click)="navigateHandler()">On Click About</button>
+  </div>
+</header>
